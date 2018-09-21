@@ -17,7 +17,7 @@ class ClassesExtension extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('classes', ['HtmlClassHelper', 'classes'])
+            new \Twig_SimpleFunction('classes', ['\Zicht\HtmlClassHelper', 'getClasses'])
         ];
     }
 
