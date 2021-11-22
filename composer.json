@@ -11,15 +11,14 @@
         }
     ],
     "require": {
-        "php": "^7",
-        "twig/twig": "^2",
+        "twig/twig": "^2.7 || ^3",
         "zicht/classes": "^2"
     },
     "require-dev": {
         "phpunit/phpunit": "^4"
     },
     "autoload": {
-        "psr-4": { "": ["src/"] }
+        "psr-4": { "Zicht\\Twig\\Extension\\": ["src/"] }
     },
     "minimum-stability": "stable",
     "scripts": {

@@ -4,25 +4,27 @@
  */
 namespace Zicht\Twig\Extension;
 
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 use Twig_Extension;
 
 /**
  * Twig extension for the classes helper function.
  */
-class ClassesExtension extends Twig_Extension
+class ClassesExtension extends AbstractExtension
 {
     /**
-     * @{inheritDoc}
+     * {@inheritDoc}
      */
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('classes', ['\Zicht\HtmlClassHelper', 'getClasses'])
+            new TwigFunction('classes', ['\Zicht\HtmlClassHelper', 'getClasses'])
         ];
     }
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     public function getName()
     {
