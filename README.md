@@ -60,12 +60,12 @@ You can even created a nested object if you need to conditionally apply classes 
     }),
     img: classes({
         'u-black  u-bg--red': color == 'black'
-     })
- %} 
+    })
+} %} 
    
 <article class="{{ cx.card }}">
     <img class="{{ cx.img }}">
     ...
 </article>
 ```
- 
+
